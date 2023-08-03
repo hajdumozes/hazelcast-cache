@@ -19,7 +19,6 @@ import java.util.Optional;
 public class EntityService {
     EntityRepository repository;
 
-    @Cacheable
     public List<Entity> findAll() {
         simulateSlowService();
         return repository.findAll();
